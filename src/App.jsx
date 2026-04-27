@@ -4,7 +4,7 @@ import "./App.css";
 function Header({ theme, toggleTheme }) {
   return (
     <header className={`header ${theme}`}>
-      <h1>Мій профіль</h1>
+      <h1>Мій профіль 2026</h1>
       <button onClick={toggleTheme} className="theme-btn">
         {theme === "dark" ? "☀️ Світла тема" : "🌙 Темна тема"}
       </button>
@@ -103,4 +103,6 @@ export default function App() {
       <Footer onContactClick={() => setShowContact(true)} />
     </div>
   );
-}
+}git add .
+git commit -m "update title"
+git push
