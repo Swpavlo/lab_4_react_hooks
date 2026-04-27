@@ -103,6 +103,4 @@ export default function App() {
       <Footer onContactClick={() => setShowContact(true)} />
     </div>
   );
-}git add .
-git commit -m "update title"
-git push
+}
