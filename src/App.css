@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+  color: #222;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+.app.dark {
+  background: #1a1a2e;
+  color: #eee;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #4f46e5;
+  color: white;
+}
+.header.dark {
+  background: #16213e;
+}
+
+.theme-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.theme-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.reviews h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.review-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.app.dark .review-card {
+  background: #16213e;
+}
+.review-card p {
+  margin-top: 0.3rem;
+  color: #555;
+}
+.app.dark .review-card p {
+  color: #aaa;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.modal {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 460px;
+  position: relative;
+}
+.app.dark .modal {
+  background: #16213e;
+  color: #eee;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #888;
+}
+.modal h2 {
+  margin-bottom: 1.2rem;
+}
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fafafa;
+}
+.app.dark .modal input,
+.app.dark .modal textarea {
+  background: #1a1a2e;
+  border-color: #444;
+  color: #eee;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.7rem;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background: #4338ca;
+}
+.success-msg {
+  text-align: center;
+  font-size: 16px;
+  color: #16a34a;
+  padding: 1rem 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #4f46e5;
+  color: white;
+}
+.app.dark .footer {
+  background: #16213e;
+}
+
+.contact-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.contact-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
